@@ -5,4 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  password: string;
+  constructor() {
+    this.password = '';
+  }
+  onButtonClick() {
+    this.password = 'MY PASSWORD';
+  }
+
+  getPassword = () => this.password;
+
+  getName = () => 'Alex';
+}

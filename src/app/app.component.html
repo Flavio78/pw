@@ -17,10 +17,13 @@
 </div>
 
 <div>
-  <button>Generate!</button>
+  <button (click)="this.onButtonClick()">Generate!</button>
 </div>
 
 <div>
   <label for="">Your password</label>
-  <input type="text">
+  <input type="text" [value]="this.getPassword()">
 </div>
+
+<!-- {{password}}
+{{getName()}} -->
